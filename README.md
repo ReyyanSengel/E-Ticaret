@@ -8,4 +8,8 @@ alabileceği, ürünler hakkında yorum yapabileceği bir e-ticaret web projesi 
 * Serilog</br>
 * Asp.Net Core Identity</br></br>
 #### Best Practices:</br>
-Onion Architecture, Dependency injection, N-tier Architecture, Global Exception, Generic Repository,UnitOfWork
+Onion Architecture, Dependency injection, N-tier Architecture, Global Exception, Generic Repository,UnitOfWork</br></br>
+###### Not</br>
+UserName: Admin</br>
+Password: Admin.01
+
