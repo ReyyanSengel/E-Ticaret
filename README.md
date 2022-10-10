@@ -1,7 +1,7 @@
 # E-Ticaret
 
 Markaların kendi ürünlerini renk, boyut gibi çeşitli özellikleri belirterek ekleyebileceği, müşterilerin bu ürünleri satın
-alabileceği, ürünler hakkında yorum yapabileceği bir e-ticaret web projesi yazılmıştır</br></br>
+alabileceği, ürünler hakkında yorum yapabileceği bir e-ticaret web projesi yazılmıştır.</br></br>
 #### Kullanılan Teknolojiler:</br>
 * Net 5 Core Framework MVC</br>
 * MYSQL,</br>
