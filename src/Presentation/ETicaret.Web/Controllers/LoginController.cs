@@ -39,7 +39,7 @@ namespace ETicaret.Web.Controllers
                 ModelState.AddModelError("Not user", "Wrong username or password");
                 return View();
             }
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]

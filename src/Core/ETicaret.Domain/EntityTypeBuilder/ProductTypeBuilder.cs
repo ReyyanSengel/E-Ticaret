@@ -20,18 +20,18 @@ namespace ETicaret.Domain.EntityTypeBuilder
             builder.Property(x => x.Price)
                 .IsRequired()
                 .HasColumnType("decimal(18,2)");
-                
+
             builder.Property(x => x.Stock)
                 .IsRequired()
                 .HasColumnType("int")
                 .HasMaxLength(50);
 
-          
-          
-           
 
-           
-               
+
+
+
+
+
 
         }
     }

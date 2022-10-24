@@ -1,6 +1,6 @@
 using ETicaret.Domain.Entities;
 using ETicaret.Persistence;
-using ETicaret.Persistence.Contexts;
+using ETicaret.Persistence.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ETicaret.Application.Interfaces.IService
 {
-    public interface ICategoryService:IGenericService<Category>
+    public interface ICategoryService : IGenericService<Category>
     {
     }
 }

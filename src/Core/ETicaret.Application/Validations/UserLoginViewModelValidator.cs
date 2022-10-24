@@ -12,14 +12,14 @@ namespace ETicaret.Application.Validations
     {
         public UserLoginViewModelValidator()
         {
-            RuleFor(x=>x.UserName)
+            RuleFor(x => x.UserName)
                 .NotEmpty()
                 .NotNull()
                 .WithMessage("UserName is required");
             RuleFor(x => x.Password)
                 .NotEmpty()
                 .WithMessage("Please enter the password");
-
         }
     }
 }
+

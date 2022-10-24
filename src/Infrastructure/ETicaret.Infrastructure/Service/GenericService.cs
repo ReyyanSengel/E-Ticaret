@@ -2,7 +2,7 @@
 using ETicaret.Application.Interfaces.IService;
 using ETicaret.Application.Interfaces.IUnitOfWork;
 using ETicaret.Domain.Common;
-using ETicaret.Persistence.Contexts;
+using ETicaret.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -28,17 +28,17 @@ namespace ETicaret.Infrastructure.Service
         {
             _repository.Add(entity);
             _unitOfWork.CommitAync();
-            return entity; 
+            return entity;
         }
 
         public async Task<bool> AnyAsync(Expression<Func<TEntity, bool>> expression)
         {
-           return await _repository.AnyAsync(expression);
+            return await _repository.AnyAsync(expression);
         }
 
         public IEnumerable<TEntity> GetAll()
         {
-            return  _repository.GetAll().ToList();
+            return _repository.GetAll().ToList();
         }
 
         public async Task<TEntity> GetByIdAsync(int id)
@@ -48,7 +48,7 @@ namespace ETicaret.Infrastructure.Service
 
         public async Task RemoveAsync(TEntity entity)
         {
-           _repository.Remove(entity);
+            _repository.Remove(entity);
             await _unitOfWork.CommitAync();
         }
 

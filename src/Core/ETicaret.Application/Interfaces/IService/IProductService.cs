@@ -13,6 +13,6 @@ namespace ETicaret.Application.Interfaces.IService
         Task<List<Product>> GetProductWithAll();
         Product GetProductId(int id);
     }
-       
-       
 }
+
+

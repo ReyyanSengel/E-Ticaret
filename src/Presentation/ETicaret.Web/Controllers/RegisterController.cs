@@ -16,13 +16,9 @@ namespace ETicaret.Web.Controllers
     public class RegisterController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
-        
-
-
         public RegisterController(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
-            
         }
 
         [HttpGet]
@@ -34,31 +30,36 @@ namespace ETicaret.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(UserRegisterViewModel userRegisterViewModel)
         {
-            AppUser appUser = new AppUser()
-            {
-                Name=userRegisterViewModel.Name,
-                SurName=userRegisterViewModel.SurName,
-                UserName=userRegisterViewModel.UserName,
-                Email=userRegisterViewModel.Email
-            };
-          
-
             if (!ModelState.IsValid)
             {
                 return View(userRegisterViewModel);
             }
 
+            AppUser appUser = new AppUser()
+            {
+                Name = userRegisterViewModel.Name,
+                SurName = userRegisterViewModel.SurName,
+                UserName = userRegisterViewModel.UserName,
+                Email = userRegisterViewModel.Email
+            };
+
             var RegisterResult = await _userManager.CreateAsync(appUser, userRegisterViewModel.Password);
-                if (!RegisterResult.Succeeded)
+
+            if (!RegisterResult.Succeeded)
+            {
+                foreach (var item in RegisterResult.Errors)
                 {
-                   foreach (var item in RegisterResult.Errors)
-                   {
                     ModelState.AddModelError("", item.Description);
-                   }
                 }
-               
-                return RedirectToAction("Index", "Login");
-           
+            }
+
+            return RedirectToAction("Index", "Login");
+
+
+
+
+
+
 
 
 

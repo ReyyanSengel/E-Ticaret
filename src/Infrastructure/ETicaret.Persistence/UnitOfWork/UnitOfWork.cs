@@ -1,5 +1,5 @@
 ﻿using ETicaret.Application.Interfaces.IUnitOfWork;
-using ETicaret.Persistence.Contexts;
+using ETicaret.Persistence.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +24,7 @@ namespace ETicaret.Persistence.UnitOfWork
 
         public async Task CommitAync()
         {
-           await  _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
         }
     }
 }

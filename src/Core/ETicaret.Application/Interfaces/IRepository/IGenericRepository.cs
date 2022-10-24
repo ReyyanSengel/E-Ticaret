@@ -18,6 +18,6 @@ namespace ETicaret.Application.Interfaces.IRepository
         void Update(TEntity entity);
         void Remove(TEntity entity);
 
-
     }
 }
+

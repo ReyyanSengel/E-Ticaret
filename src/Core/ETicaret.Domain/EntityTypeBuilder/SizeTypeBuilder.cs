@@ -19,7 +19,7 @@ namespace ETicaret.Domain.EntityTypeBuilder
                 .HasMaxLength(100);
 
             builder.HasMany(i => i.Products).WithOne(i => i.Size).HasForeignKey(i => i.SizeId);
-           
+
         }
     }
 }

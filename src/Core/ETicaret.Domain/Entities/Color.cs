@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ETicaret.Domain.Entities
 {
-    public class Color: BaseEntity
+    public class Color : BaseEntity
     {
         public string ColorName { get; set; }
         public ICollection<Product> Products { get; set; }

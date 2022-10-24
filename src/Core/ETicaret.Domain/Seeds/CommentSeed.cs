@@ -14,8 +14,8 @@ namespace ETicaret.Domain.Seeds
         public void Configure(EntityTypeBuilder<Comment> builder)
         {
             builder.HasData(
-                new Comment { Id = 1, Comments = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",ProductId=1 },
-                new Comment { Id = 2, Comments = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" , ProductId = 2 },
+                new Comment { Id = 1, Comments = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", ProductId = 1 },
+                new Comment { Id = 2, Comments = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", ProductId = 2 },
                 new Comment { Id = 3, Comments = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", ProductId = 3 },
                 new Comment { Id = 4, Comments = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", ProductId = 5 },
                 new Comment { Id = 5, Comments = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", ProductId = 7 },

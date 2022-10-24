@@ -1,6 +1,6 @@
 ﻿using ETicaret.Application.Interfaces.IRepository;
 using ETicaret.Domain.Common;
-using ETicaret.Persistence.Contexts;
+using ETicaret.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ETicaret.Domain.Entities
 {
-     public class Size: BaseEntity
+    public class Size : BaseEntity
     {
         public string SizeName { get; set; }
         public ICollection<Product> Products { get; set; }

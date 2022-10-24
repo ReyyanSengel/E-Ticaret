@@ -10,7 +10,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaret.Persistence.Contexts
+namespace ETicaret.Persistence.Context
 {
     public class ETicaretContext : IdentityDbContext<AppUser, AppRole, int>
     {

@@ -22,8 +22,8 @@ namespace ETicaret.Domain.Seeds
                 new Size { Id = 6, SizeName = "42" },
                 new Size { Id = 7, SizeName = "44" }
                 );
-                
-
         }
     }
 }
+
+

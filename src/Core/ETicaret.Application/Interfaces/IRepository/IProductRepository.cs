@@ -10,9 +10,9 @@ namespace ETicaret.Application.Interfaces.IRepository
 {
     public interface IProductRepository : IGenericRepository<Product>
     {
-
-
-
-
     }
 }
+
+
+
+

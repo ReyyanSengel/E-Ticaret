@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ETicaret.Domain.Entities
 {
-    public class AppUser:IdentityUser<int>
+    public class AppUser : IdentityUser<int>
     {
         public string Name { get; set; }
         public string SurName { get; set; }
-        
     }
 }
+
